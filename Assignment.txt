@@ -1,0 +1,58 @@
+
+Objective: Create a diary application that allows users to create and manage different diaries.
+
+Required Modules:
+Main Module (main.py)-- This will be the driver script which will interact with the user.
+Requirements:
+When launched, the user should be able to specify the diary to create or the diary that should be opened. (E.g., if the user provides the name of an existing diary, then the dairy is opened.)
+If the diary is new, a new diary file should be created for storing diary info and pages.
+If the diary is a previous diary, the application should open the diary with all of its content. 
+The application should allow the user to perform various actions on the diary and the pages within the diary:
+Diary level operations/actions: 
+Add new page
+Find existing page(s)
+Display pages in the diary
+Remove page(s) from the diary
+Save diary (and associated pages)
+Reload (restore from last saved version)
+Diary Page level operations/actions:
+Set Title 
+Set/Update content
+Display content
+Save page
+
+Dairy Module (diary.py) -- This module will define the Diary and Diary Page classes and provide the implementations for them.
+You will need to create 2 Python classes:
+Diary
+DiaryPage
+
+Requirements:
+Creation of diary: A user creates a new diary by creating a new Diary class instance with a new name for the Diary to be created provided as a parameter to the Diary constructor.
+Contents of Diary should be saved. Stored contents of Diary is as follows:
+Info Page:  contains the following information which should be saved in the Diary file:
+Diary name
+Creation date
+Creator
+Last modified date
+Diary entries:  contains the following information which should be saved in the Diary file for each diary entry:
+Entry title
+Entry text
+Creation date
+Last modified date
+Loading of diary: A user loads a previous diary by  creating a new Diary class instance with the name of a previously created Diary as a parameter to the Diary constructor. The file for the Diary should be opened and its contents loaded into memory within the new Diary class instance:
+The diary info entry should be read and the values stored into the appropriate data members of the Diary object.
+Each diary entry should be read from the file and used to create a Diary Page object for each stored entry. 
+The user should be able to perform the following operations on the Diary:
+Create/add a new diary page to the diary.
+Retrieve an existing page by:
+page number
+search string
+search date
+Delete a specific page
+Display a range of pages
+Save diary:  creates or updates diary file for the named Diary
+The user should be able to perform the following operations on each Diary Page:
+Set Title 
+Set/Update content
+Display content
+Save page

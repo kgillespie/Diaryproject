@@ -1,0 +1,6 @@
+hx= 
+
+For next week:
+1, Complete creation of Diary Page Menu
+2. Implement add page
+3. Be able to added multiple pages (by reloading the Diary Page Menu)
