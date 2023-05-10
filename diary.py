@@ -1,6 +1,7 @@
 # defines the Diary related classes - NOT diary
 # management routines
 # Need to make updates
+# Author Kevin G
 
 from datetime import datetime
 
