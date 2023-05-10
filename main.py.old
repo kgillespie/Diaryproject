@@ -1,0 +1,33 @@
+
+
+import diary
+# Start with some imports!
+from IPython.display import display
+from ipywidgets import interact, interactive, fixed
+import ipywidgets as widgets
+
+
+diaryName = ""
+
+def setDiaryName(mStr):
+
+    dairyName = mStr
+    #w.close()
+    print(mStr)
+    return dairyName
+
+#w = interactive(f,{'manual': True}, a=10, b=20)
+w = interactive(setDiaryName, {'manual': True}, mStr="[Replace with Diary Name]" )
+interact(setDiaryName, mStr="[Replace with Diary Name]" )
+display(w)
+
+print("Program continued")
+my_diary = diary.Diary("First Diary") 
+
+diary_page = diary.DiaryPage("My First Entry", "This is way cool!")
+
+
+my_diary.add_page(diary_page)
+my_diary.add_page(diary_page)
+print("Test scenario XYZ")
+my_diary.display_diary_pages(1, 2, 500)

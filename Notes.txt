@@ -1,0 +1,15 @@
+Format for diary
+diary:
+-- name: str
+-- pages[]: list
+    -- title: str
+    -- text: str
+    -- created_date
+-- owner: str
+-- created_date: str
+-- last_modified: str
+
+We can create a single file for all the diary content
+=====================================================
+diary:name:owner:created_date:last_modified:
+page:title:text:created_date:

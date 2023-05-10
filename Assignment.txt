@@ -39,7 +39,7 @@ Entry title
 Entry text
 Creation date
 Last modified date
-Loading of diary: A user loads a previous diary by  creating a new Diary class instance with the name of a previously created Diary as a parameter to the Diary constructor. The file for the Diary should be opened and its contents loaded into memory within the new Diary class instance:
+Loading of diary: A user loads a previous diary by creating a new Diary class instance with the name of a previously created Diary as a parameter to the Diary constructor. The file for the Diary should be opened and its contents loaded into memory within the new Diary class instance:
 The diary info entry should be read and the values stored into the appropriate data members of the Diary object.
 Each diary entry should be read from the file and used to create a Diary Page object for each stored entry. 
 The user should be able to perform the following operations on the Diary:
